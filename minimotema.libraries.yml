@@ -1,0 +1,14 @@
+minimotema-theme:
+  css:
+    theme:
+      css/theme.css: {}
+
+bootstrap:
+  css:
+    theme:
+      vendor/bootstrap/bootstrap.css: {}
+      vendor/bootstrap/bootstrap-theme.css: {}
+  js:
+    vendor/bootstrap/bootstrap.js
+  dependencies:
+    - core/jquery
