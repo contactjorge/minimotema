@@ -1,20 +1,22 @@
 #
 # Minimo tema theme
-# Information YAML for theme
+# Earth
+# Libraries for theme
 # Jorge L Lopez - IT 390
+# Version 1805.17
 # Copyright 2018
 #
 name: Minimotema
 description: 'A minimal drupal 8 theme. Now with Bootstrap'
 type: theme
-
 package: Custom
 base theme: false
 core: 8.x
 
 libraries:
-  - minimotema/minimotema-theme
   - minimotema/bootstrap
+  - minimotema/webfonts
+  - minimotema/minimotema-theme
 
 regions:
   header: Header
@@ -29,18 +31,18 @@ regions:
   highlighted: Highlighted
   breadcrumb: Breadcrumb
   content: Content
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
   featured_bottom_first: 'Featured bottom first'
   featured_bottom_second: 'Featured bottom second'
   featured_bottom_third: 'Featured bottom third'
   admin_area_bottom: 'Admin area bottom'
   user_area: 'User area'
   footer: 'Footer'
-regions_hidden:
-  sidebar_first: 'Sidebar first'
-  sidebar_second: 'Sidebar second'
   off_canvas: 'Off Canvas'
-  footer_fifth: 'Footer fifth'
+regions_hidden:
   footer_first: 'Footer first'
   footer_second: 'Footer second'
   footer_third: 'Footer third'
   footer_fourth: 'Footer fourth'
+  footer_fifth: 'Footer fifth'

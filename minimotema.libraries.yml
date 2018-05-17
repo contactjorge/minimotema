@@ -1,20 +1,29 @@
 #
 # Minimo tema theme
+# Earth
 # Libraries for theme
 # Jorge L Lopez - IT 390
+# Version 1805.17
 # Copyright 2018
 #
 minimotema-theme:
   css:
     theme:
       css/theme.css: {}
+  js:
+    js/theme.js: {}
 
 bootstrap:
   css:
     theme:
-      vendor/bootstrap/bootstrap.css: {}
-      vendor/bootstrap/bootstrap-theme.css: {}
+      vendor/bootstrap/css/bootstrap.css: {}
+      vendor/bootstrap/css/bootstrap-theme.css: {}
   js:
-    vendor/bootstrap/bootstrap.js
+    vendor/bootstrap/js/bootstrap.js: {}
   dependencies:
     - core/jquery
+
+webfonts:
+  css:
+    theme:
+      https://fonts.googleapis.com/css?family=Open+Sans:300,400, 600,700,800|Roboto+Slab: { type: external }
