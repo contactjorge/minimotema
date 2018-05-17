@@ -1,14 +1,9 @@
 <?php
+/**
+ * Implements hook_preprocess_html().
+ */
+function minimotema_preprocess_block(&$variables){
+	// add to classes
+	$variables['attributes']['class'][] = 'minimotema';
 
-//function minimotema_preprocess_block(&$variables){
-
-	// Add layout class to Featured Blocks
-	//$featured = array('block-tweet-customblockone','block-tweet-customblocktwo','block-tweet-customblockthree');
-
-	//$id = $variables['attributes']['id'];
-
-	// If block id matches list - add class
-	//if(in_array($id, $featured)){
-//		$variables['attributes']['class'][] = 'col-md-4';
- // }
-//}
+}
