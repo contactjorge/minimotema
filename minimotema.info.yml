@@ -1,9 +1,9 @@
-/**
-/* Minimo tema theme
-/* Javascript for theme
-/* Jorge L Lopez - IT 390
-/* Copyright 2018
-*/
+#
+# Minimo tema theme
+# Information YAML for theme
+# Jorge L Lopez - IT 390
+# Copyright 2018
+#
 name: Minimotema
 description: 'A minimal drupal 8 theme. Now with Bootstrap'
 type: theme
