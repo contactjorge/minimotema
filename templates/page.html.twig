@@ -45,50 +45,49 @@
  * @ingroup themeable
  */
 #}
-<div class="container-fluid">
-	{{ page.primary_menu }}
-	<header class="container" role="banner">
+<header class="container-fluid">
+	<section class="row" role="presentation">
+		{{ page.primary_menu }}
+	</section>
+
+	<section class="row" role="banner">
+		{{ page.breadcrumb }}
+	</section>
+
+	<section class="row" role="banner">
 		{{ page.header }}
-		{{ page.slider }}
-	</header>
-	{{ page.breadcrumb }}
+	</section>
 
-	{{ page.secondary_menu }}
+	<section class="row" role="banner">
+		{{ page.jumbotron }}
+	</section>
 
-	{{ page.highlighted }}
+	<section class="row" role="presentation">
+		{{ page.secondary_menu }}
+	</section>
+</header>{# header layout-container #}
 
-	<main class="row" role="main">
-		<a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+<main class="container-fluid" role="main">
+	<a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-		<section class="container layout-content">
-			{{ page.content }}
-		</section>{# /.layout-content #}
+	<section class="row layout-content">
+		{{ page.highlighted }}
+	</section>
 
-		{% if page.sidebar_first %}
-			<aside class="layout-sidebar-first" role="complementary">
-				{{ page.sidebar_first }}
-			</aside>
-		{% endif %}
-
-		{% if page.sidebar_second %}
-			<aside class="layout-sidebar-second" role="complementary">
-				{{ page.sidebar_second }}
-			</aside>
-		{% endif %}
-	</main>
-
-	<section class="container-fluid">
+	<section class="row layout-content">
+		{{ page.content }}
+	</section>
+	<section class="row">
 		{{ page.featured_bottom_first }}
 	</section>
 
-	<section class="container-fluid" id="get-help">
+	<section class="row" id="get-help">
 		{{ page.help }}
 	</section>
+</main>
 
-	{% if page.footer %}
-		<footer class="container" role="contentinfo">
-			{{ page.footer }}
-		</footer>
-	{% endif %}
-
-</div>{# /.layout-container #}
+{% if page.footer %}
+	<footer class="container-fluid" role="contentinfo">
+		{{ page.footer }}
+	</footer>
+{% endif %}

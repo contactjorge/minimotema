@@ -45,41 +45,55 @@
  * @ingroup themeable
  */
 #}
-<div class="container">
-	<header class="container-fluid" role="banner">
+<header class="container-fluid">
+	<section class="row" role="presentation">
 		{{ page.primary_menu }}
-		{{ page.slider }}
+	</section>
+
+	<section class="row" role="presentation">
 		{{ page.breacrumb }}
-	</header>
+	</section>
 
-	<header class="container-fluid" role="presentation">
+	<section class="row">
+		{{ page.slider }}
+	</section>
+
+</header>{# header layout-container #}
+
+<main class="container-fluid" role="main">
+	<a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+
+	<section class="row" role="banner">
+		{{ page.jumbotron }}
+	</section>
+
+	<section class="row">
 		{{ page.highlighted }}
-	</header>
+	</section>
 
-	<main class="container-fluid" role="main">
-		<a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-		<section class="row">
-			{{ page.featured_bottom_first }}
-		</section>
-		<section class="row">
-			{{ page.featured_bottom_second }}
-		</section>
-		<section class="row">
-			{{ page.featured_bottom_third }}
-		</section>
-	</main>
+	<section class="row">
+		{{ page.featured_bottom_first }}
+	</section>
 
-	{% if page.footer %}
-		<footer class="container" role="contentinfo">
-			<div class="row">
-				<div class="col-sm-6 col-md-6 col-lg-6">
-					<h3>chicagoconnect.solutions</h3>
-				</div>
-				<div class="col-sm-6 col-md-6 col-lg-6">
-					<p>copyright 2018</p>
-				</div>
+	<section class="row">
+		{{ page.featured_bottom_second }}
+	</section>
+
+	<section class="row">
+		{{ page.featured_bottom_third }}
+	</section>
+</main>
+
+{% if page.footer %}
+	<footer class="container-fluid" role="contentinfo">
+		<div class="row">
+			<div class="col-sm-6 col-md-6 col-lg-6">
+				<h3>chicagoconnect.solutions</h3>
 			</div>
-		</footer>
-	{% endif %}
+			<div class="col-sm-6 col-md-6 col-lg-6">
+				<p>copyright 2018</p>
+			</div>
+		</div>
+	</footer>
+{% endif %}
 
-</div>{# /.layout-container #}

@@ -3,6 +3,11 @@
  * Implements hook_preprocess_html().
  */
 function minimotema_preprocess_block(&$variables){
+	//Display variables
+	dpm($variables);
+}
+
+function minimotema_preprocess_html(&$variables){
 	// add to classes
 	$variables['attributes']['class'][] = 'minimotema';
 
