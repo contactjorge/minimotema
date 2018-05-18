@@ -21,7 +21,6 @@ libraries:
 regions:
   page_top: 'Page top'
   primary_menu: 'Primary menu'
-  admin_menu: 'Admin menu'
   breadcrumb: Breadcrumb
   header: Header
   page_jumbotron: 'Page Jumbotron (Level 2 pages only)'

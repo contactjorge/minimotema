@@ -12,3 +12,9 @@ function minimotema_preprocess_html(&$variables){
 	$variables['attributes']['class'][] = 'minimotema';
 
 }
+
+function minimotema_preprocess_region(&$variables){
+  // add to classes
+  $variables['attributes']['class'][] = 'row';
+
+}
