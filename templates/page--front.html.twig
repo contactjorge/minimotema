@@ -45,10 +45,13 @@
  * @ingroup themeable
  */
 #}
-{{ page.primary_menu }}
+<header class="top-nav">
+	{{ page.primary_menu }}
+</header>
 
 <header class="container-fluid">
 	<section class="row" role="banner">
+		{{ page.jumbotron }}
 		{{ page.slider }}
 	</section>
 </header>{# header layout-container role=banner#}
@@ -64,7 +67,7 @@
 </header>{# header layout-container role=presentation#}
 
 <main class="container-fluid" role="main">
-	<a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+	<a id="front-main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 	<section class="row layout-content">
 		{{ page.highlighted }}
 	</section>
@@ -88,17 +91,14 @@
 	<section class="row layout-content" role="region">
 		{{ page.featured_bottom_third }}
 	</section>
-
-	<section class="row layout-content" id="get-help">
-		{{ page.help }}
-	</section>
-</main>
+</main>{# main content layout-container role presentation #}
 
 <footer class="footer" role="contentinfo">
-	<div class="container main-footer">
+	<div class="container-fluid main-footer">
 		<div class="row">
 			<div class="col-footer col-sm-4 col-md-4 col-lg-4">
 				{{ page.footer_first }}
+				{{ page.help }}
 			</div>
 			<div class="col-footer col-sm-4 col-md-4 col-lg-4">
 				{{ page.footer_second }}

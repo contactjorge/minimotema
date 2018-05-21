@@ -23,9 +23,7 @@ regions:
   primary_menu: 'Primary menu'
   page_jumbotron: 'Page Jumbotron (Level 2 pages only)'
   page_slider: 'Page slider (Front page only)'
-  breadcrumb: Breadcrumb
   secondary_menu: 'Secondary menu'
-  highlighted: Highlighted
   featured_top: 'Featured top'
   content: Content
   featured_bottom_first: 'Featured bottom first'
@@ -36,9 +34,12 @@ regions:
   footer_second: 'Footer second (Front page only)'
   footer_third: 'Footer third (Front page only)'
   page_bottom: 'Page bottom'
-  off_canvas: 'Off Canvas'
 disabled:
+  highlighted: Highlighted
+  breadcrumb: Breadcrumb
   header: Header
   footer_user: 'Footer for User'
   sidebar_first: 'Sidebar first'
   sidebar_second: 'Sidebar second'
+  off_canvas: 'Off Canvas'
+

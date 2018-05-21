@@ -9,7 +9,9 @@
 html{
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
 }
-body{}
+body{
+  padding-top: 70px;
+}
 h1{font-size: 26px;}
 h2{font-size: 24px;}
 h3{font-size: 22px;}
@@ -24,17 +26,30 @@ footer{}
 	background: #0f0f0f;
 	color: white;
 }
-wrapper {
+.wrapper {
   padding: 0 0;
+  background: azure;
+  color: black;
 }
 section, article{
   padding: 1rem 0;
 }
-/** Component Styles **/
+.top-nav{
+  background: azure;
+}
 
+/** Component Styles **/
+.top-nav nav {
+  background: azure;
+  color: black;
+}
+col-footer{
+  background: azure;
+  color: black;
+}
 
 /** State Styles **/
 
 
 /** Theme Styles **/
-nav {}
+top-nav {}

@@ -45,19 +45,16 @@
  * @ingroup themeable
  */
 #}
-{{ page.primary_menu }}
+<header class="top-nav">
+	{{ page.primary_menu }}
+</header>
 
 <header class="container-fluid">
-	<section class="row" role="banner">
-		{{ page.jumbotron }}
+	<section class="row">
+		{{ page.herooriginal }}
+		{{ page.hero }}
 	</section>
-</header>{# header layout-container role - banner#}
-
-<header class="container-fluid">
-	<section class="row" role="presentation">
-		{{ page.breadcrumb }}
-	</section>
-	<section class="row" role="presentation">
+	<section class="row">
 		{{ page.secondary_menu }}
 	</section>
 </header>{# header layout-container role presentation #}
@@ -82,27 +79,30 @@
 		{{ page.featured_bottom_first }}
 	</section>
 
-	<section class="row layout-content" id="get-help">
-		{{ page.help }}
+	<section class="row layout-content">
+		{{ page.featured_bottom_second }}
+	</section>
+
+	<section class="row layout-content" role="region">
+		{{ page.featured_bottom_third }}
 	</section>
 </main>{# main content layout-container role presentation #}
 
-{% if page.footer %}
-	<footer class="footer" role="contentinfo">
-		<div class="container main-footer">
-			<div class="row">
+<footer class="footer" role="contentinfo">
+	<div class="container-fluid main-footer">
+		<div class="row">
+			<div class="col-footer col-sm-4 col-md-4 col-lg-4">
 				{{ page.footer_first }}
-				<div class="col-sm-4 col-md-4">
-					{{ page.footer_second }}
-				</div>
+				{{ page.help }}
+			</div>
+			<div class="col-footer col-sm-4 col-md-4 col-lg-4">
+				{{ page.footer_second }}
+			</div>
+			<div class="col-footer col-xs-4 col-sm-4 col-md-4 col-lg-4">
 				{{ page.footer_third }}
 			</div>
 		</div>
-		<div class="container main-footer">
-			{{ page.footer }}
-		</div>
+	</div>
+</footer>
 
-		#}
-	</footer>
-{% endif %}
 
