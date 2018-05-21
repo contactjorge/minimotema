@@ -2,20 +2,36 @@
 /**
  * Implements hook_preprocess_html().
  *
- *
- * function minimotema_preprocess_block(&$variables){
-	//Display variables
-	dpm($variables);
-}
-*/
+ */
 
 function minimotema_preprocess_html(&$variables){
-	// add to classes
-	$variables['attributes']['class'][] = 'minimotema';
+  // add to classes at html level
+  $variables['attributes']['class'][] = 'minimotema-html';
 
 }
 
 function minimotema_preprocess_region(&$variables){
-  // add to classes
-  $variables['attributes']['class'][] = 'row';
+  // add to classes at region level
+  $variables['attributes']['class'][] = 'minimotema-region row';
+}
+
+function minimotema_preprocess_page(&$variables){
+  //add to classes at page level
+  $variables['attributes']['class'][] = 'minimotema-page row';
+}
+
+function minimotema_preprocess_block(&$variables){
+  //Display variables
+  dpm($variables);
+  $variables['attributes']['class'][] = 'minimotema-block';
+}
+
+function minimotema_preprocess_field(&$variables){
+  //add to classes at field level
+  $variables['attributes']['class'][] = 'minimotema-field';
+}
+
+function minimotema_preprocess_field__hero(&$variables){
+  //add to classes at field level
+  $variables['attributes']['class'][] = 'jumbotron';
 }

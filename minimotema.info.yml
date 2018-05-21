@@ -21,8 +21,8 @@ libraries:
 regions:
   page_top: 'Page top'
   primary_menu: 'Primary menu'
-  page_jumbotron: 'Page Jumbotron (Level 2 pages only)'
-  page_slider: 'Page slider (Front page only)'
+  jumbotron: 'Page Jumbotron (Level 2 pages only)'
+  slider: 'Page slider (Front page only)'
   secondary_menu: 'Secondary menu'
   featured_top: 'Featured top'
   content: Content

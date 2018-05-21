@@ -45,15 +45,7 @@
  * @ingroup themeable
  */
 #}
-<header class="top-nav">
-	{{ page.primary_menu }}
-</header>
-
 <header class="container-fluid">
-	<section class="row">
-		{{ page.herooriginal }}
-		{{ page.hero }}
-	</section>
 	<section class="row">
 		{{ page.secondary_menu }}
 	</section>
@@ -71,21 +63,18 @@
 		{{ page.featured_top }}
 	</section>
 
-	<section class="row layout-content">
+	<article class="row layout-content">
 		{{ page.content }}
-	</section>
+	</article>
 
-	<section class="row layout-content">
+	<article class="row layout-content">
 		{{ page.featured_bottom_first }}
-	</section>
+	</article>
 
-	<section class="row layout-content">
+	<article class="row layout-content">
 		{{ page.featured_bottom_second }}
-	</section>
+	</article>
 
-	<section class="row layout-content" role="region">
-		{{ page.featured_bottom_third }}
-	</section>
 </main>{# main content layout-container role presentation #}
 
 <footer class="footer" role="contentinfo">

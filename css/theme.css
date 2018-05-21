@@ -47,9 +47,32 @@ col-footer{
   background: azure;
   color: black;
 }
+.minimotema-field img{
+  max-height: 480px;
+  margin: 0;
+}
 
 /** State Styles **/
 
 
 /** Theme Styles **/
-top-nav {}
+minimo-white {color: #E0E0E0;}
+minim-offwhite {color: #d1d1d1}
+minimo-gray {color: #a7b8b5}
+minimo-beige{color: #cfc5bc;}
+minimo-brown {color: #aea085}
+minimo-darkbrown {color: #847767}
+minimo-orange{color: #c88770;}
+minimo-yellow {color: #009f00;}
+minimo-green {color: #006332;}
+minimo-bluegreen {color: #006332;}
+minimo-blue {color: #007f9f;}
+minimo-blueindigo {color: #1e698d}
+minimo-indigo {color: #082d3a}
+minimo-violet {color: #131925;}
+minimo-black {color: #010101;}
+minimo-bg-panel-color, minimo-bg-card-color, minimo-bg-stamp-color{
+  background-color: #d1d1d1;
+  color: #082d3a;
+  border-bottom-style: inset;
+}
