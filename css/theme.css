@@ -24,7 +24,12 @@ footer{}
 	background: #0f0f0f;
 	color: white;
 }
-
+wrapper {
+  padding: 0 0;
+}
+section, article{
+  padding: 1rem 0;
+}
 /** Component Styles **/
 
 

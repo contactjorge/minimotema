@@ -45,28 +45,23 @@
  * @ingroup themeable
  */
 #}
+{{ page.primary_menu }}
+
 <header class="container-fluid">
-	<section class="row" role="presentation">
-		{{ page.primary_menu }}
-	</section>
-
-	<section class="row" role="presentation">
-		{{ page.breacrumb }}
-	</section>
-
-	<section class="row" role="banner">
-		{{ page.header }}
-	</section>
-
 	<section class="row" role="banner">
 		{{ page.slider }}
+	</section>
+</header>{# header layout-container role=banner#}
+
+<header class="container-fluid">
+	<section class="row" role="presentation">
+		{{ page.breacrumb }}
 	</section>
 
 	<section class="row" role="presentation">
 		{{ page.secondary_menu }}
 	</section>
-
-</header>{# header layout-container #}
+</header>{# header layout-container role=presentation#}
 
 <main class="container-fluid" role="main">
 	<a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
@@ -99,21 +94,19 @@
 	</section>
 </main>
 
-{% if page.footer %}
-	<footer class="container-fluid" role="contentinfo">
+<footer class="footer" role="contentinfo">
+	<div class="container main-footer">
 		<div class="row">
-			{{ page.footer }}
-		</div>
-		<div class="row">
-			{{ page.user_area }}
-			{{ page.footer_first }}
-			{{ page.footer_second }}
-			<div class="col-sm-3 col-md-3 col-lg-3">
-				<p>chicagoconnect.solutions</p>
-				<p>copyright 2018</p>
-
+			<div class="col-footer col-sm-4 col-md-4 col-lg-4">
+				{{ page.footer_first }}
+			</div>
+			<div class="col-footer col-sm-4 col-md-4 col-lg-4">
+				{{ page.footer_second }}
+			</div>
+			<div class="col-footer col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				{{ page.footer_third }}
 			</div>
 		</div>
-	</footer>
-{% endif %}
+	</div>
+</footer>
 
