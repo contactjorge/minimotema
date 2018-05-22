@@ -10,7 +10,7 @@ html{
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 body{
-  padding-top: 70px;
+  padding-top: 51px;
 }
 h1{font-size: 26px;}
 h2{font-size: 24px;}
@@ -24,11 +24,11 @@ footer{}
 /** Layout Styles **/
 #front {
 	background: #0f0f0f;
-	color: white;
+	color: #1e698d;
 }
 .wrapper {
   padding: 0 0;
-  background: azure;
+  background-color: #d1d1d1;
   color: black;
 }
 section, article{
@@ -40,11 +40,11 @@ section, article{
 
 /** Component Styles **/
 .top-nav nav {
-  background: azure;
+  background-color: #d1d1d1;
   color: black;
 }
 col-footer{
-  background: azure;
+  background-color: #d1d1d1;
   color: black;
 }
 .minimotema-field img{
@@ -63,6 +63,7 @@ col-footer{
 
 
 /** Theme Styles **/
+
 minimo-white {color: #E0E0E0;}
 minim-offwhite {color: #d1d1d1}
 minimo-gray {color: #a7b8b5}
@@ -82,4 +83,9 @@ minimo-bg-panel-color, minimo-bg-card-color, minimo-bg-stamp-color{
   background-color: #d1d1d1;
   color: #082d3a;
   border-bottom-style: inset;
+}
+.icon-bar {
+  color: #131925;
+  border-color: #131925;
+  background-color: #131925;
 }

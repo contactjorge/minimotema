@@ -28,7 +28,7 @@ function minimotema_preprocess_page(&$variables){
 
 function minimotema_preprocess_block(&$variables){
   //Display variables
-  dpm($variables);
+  //dpm($variables);
   $variables['attributes']['class'][] = 'minimotema-block';
 }
 
