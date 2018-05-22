@@ -2,6 +2,12 @@
 /**
  * Implements hook_preprocess_html().
  *
+ * Minimo tema theme
+ * Luna
+ * Libraries for theme
+ * Jorge L Lopez - IT 390
+ * Version 1805.21
+ * Copyright 2018
  */
 
 function minimotema_preprocess_html(&$variables){

@@ -1,9 +1,9 @@
 #
 # Minimo tema theme
-# Earth
+# Luna
 # Libraries for theme
 # Jorge L Lopez - IT 390
-# Version 1805.17
+# Version 1805.21
 # Copyright 2018
 #
 name: Minimotema
@@ -19,10 +19,12 @@ libraries:
   - minimotema/minimotema-theme
 
 regions:
-  page_top: 'Page top'
   primary_menu: 'Primary menu'
+  header: Header
   jumbotron: 'Page Jumbotron (Level 2 pages only)'
   slider: 'Page slider (Front page only)'
+  highlighted: Highlighted
+  breadcrumb: Breadcrumb
   secondary_menu: 'Secondary menu'
   featured_top: 'Featured top'
   content: Content
@@ -33,13 +35,8 @@ regions:
   footer_first: 'Footer first (Front page only)'
   footer_second: 'Footer second (Front page only)'
   footer_third: 'Footer third (Front page only)'
-  page_bottom: 'Page bottom'
 disabled:
-  highlighted: Highlighted
-  breadcrumb: Breadcrumb
-  header: Header
-  footer_user: 'Footer for User'
   sidebar_first: 'Sidebar first'
   sidebar_second: 'Sidebar second'
-  off_canvas: 'Off Canvas'
-
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'

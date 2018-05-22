@@ -45,35 +45,28 @@
  * @ingroup themeable
  */
 #}
-<header class="container-fluid">
-	<section class="row">
-		{{ page.secondary_menu }}
-	</section>
-</header>{# header layout-container role presentation #}
+<header class="top-nav">
+	{{ page.primary_menu }}
+</header>
 
+<header class="container-fluid">
+	{{ page.header }}
+	{{ page.jumbotron }}
+	{{ page.highlighted }}
+	{{ page.featured_top }}
+	{{ page.secondary_menu }}
+</header>
 
 <main class="container-fluid" role="main">
 	<a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-	<section class="row layout-content">
-		{{ page.highlighted }}
-	</section>
-
-	<section class="row layout-content">
-		{{ page.featured_top }}
-	</section>
-
-	<article class="row layout-content">
+	<article class="row layout-content" role="article">
 		{{ page.content }}
 	</article>
 
-	<article class="row layout-content">
+	<section class="row layout-content" role="region">
 		{{ page.featured_bottom_first }}
-	</article>
-
-	<article class="row layout-content">
-		{{ page.featured_bottom_second }}
-	</article>
+	</section>
 
 </main>{# main content layout-container role presentation #}
 
