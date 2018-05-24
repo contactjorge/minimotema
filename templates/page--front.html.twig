@@ -52,17 +52,13 @@
 
 <header class="container-fluid">
 	{{ page.header }}
-
-	{{ page.highlighted }}
-	{{ page.featured_top }}
-	{{ page.secondary_menu }}
 </header>
 
 <main class="container-fluid" role="main">
 	<a id="front-main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
 	<article class="row layout-content" role="article">
-		{{ page.content }}
+		{{ page.featured_top }}
 	</article>
 
 	<section class="row layout-content" role="region">
