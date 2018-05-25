@@ -41,3 +41,9 @@ function minimotema_preprocess_field__hero(&$variables){
   //add to classes at field level
   $variables['attributes']['class'][] = 'jumbotron';
 }
+
+function minimotema_preprocess_region__featured_bottom_first(&$variables) {
+  //Display variables
+  //dpm($variables);
+  $variables['attributes']['class'][] = 'minimotema-cta';
+}

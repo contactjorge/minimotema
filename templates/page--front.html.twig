@@ -52,29 +52,29 @@
 
 <header class="container-fluid">
 	{{ page.header }}
-
-	{{ page.highlighted }}
-	{{ page.featured_top }}
-	{{ page.secondary_menu }}
 </header>
 
 <main class="container-fluid" role="main">
 	<a id="front-main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-	<article class="row layout-content" role="article">
-		{{ page.content }}
-	</article>
-
 	<section class="row layout-content" role="region">
-		{{ page.featured_bottom_first }}
 	</section>
 
-	<section class="row layout-content" role="region">
-		{{ page.featured_bottom_second }}
+	<section class="row layout-content" role="article">
 	</section>
 
-	<section class="row layout-content" role="region">
-		{{ page.featured_bottom_third }}
+	{{ page.featured_top }}
+
+	<section class="row" role="region">
+		<div class="col col-md-4">
+			{{ page.featured_bottom_first }}
+		</div>
+		<div class="col col-md-4">
+			{{ page.featured_bottom_second }}
+		</div>
+		<div class="col col-md-4">
+			{{ page.featured_bottom_third }}
+		</div>
 	</section>
 </main>{# main content layout-container role presentation #}
 

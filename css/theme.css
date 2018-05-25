@@ -7,7 +7,8 @@
 
 /*** Base Styles ***/
 html{
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #f8f8f8;
 }
 body{
   padding-top: 51px;
@@ -19,12 +20,13 @@ h4{font-size: 20px;}
 h5{font-size: 18px;}
 h6{font-size: 16px;}
 p{font-size: 15px;}
-footer{}
-
+footer {
+  background: #fff;
+}
 /** Layout Styles **/
 #front {
-	background: #0f0f0f;
-	color: #1e698d;
+  background: #f8f8f8;
+  color: #082d3a;
 }
 .wrapper {
   padding: 0 0;
@@ -35,12 +37,12 @@ section, article{
   padding: 1rem 0;
 }
 .top-nav{
-  background: azure;
+  background: #082d3a;
+  color: black;
 }
-
 /** Component Styles **/
 .top-nav nav {
-  background-color: #d1d1d1;
+  background: #082d3a;
   color: black;
 }
 col-footer{
@@ -51,14 +53,61 @@ col-footer{
   max-height: 480px;
   margin: 0;
 }
-.jumbotron{
+.jumbotron {
   background-image: url('/sites/default/files/2018-05/IMG_0901_xsm.png');
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 384px;
   max-height: 480px;
+  color: #eee;
+  font-weight: bold;
+  text-align: end;
+  text-decoration-color: #aea085;
+  text-shadow: #aea085;
 }
-
+.panel-minimo-default {
+  border-color: #a7b8b5;
+}
+.panel-minimo-default > .panel-heading {
+  color: #1e698d;
+  background-color: #e0e0e0;
+  border-color: #a7b8b5;
+}
+.panel-minimo-default > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #a7b8b5;
+}
+.panel-minimo-default > .panel-heading .badge {
+  color: #d1d1d1;
+  background-color: #1e698d;
+}
+.panel-minimo-default > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #a7b8b5;
+}
+.panel-minimo-bland {
+  background-color: #fff;
+  border-color: #fff;
+}
+.panel-minimo-bland > .panel-heading {
+  color: #1e698d;
+  background-color: #fff;
+  border-color: #a7b8b5;
+}
+.panel-minimo-bland > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #fff;
+}
+.panel-minimo-bland > .panel-heading .badge {
+  color: #1e698d;
+  background-color: #fff;
+}
+.panel-minimo-bland > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #fff;
+}
+.navbar li a {
+  color: #d1d1d1;
+}
+.navbar-brand {
+  color: #a7b8b5;
+}
 /** State Styles **/
 
 
@@ -86,6 +135,6 @@ minimo-bg-panel-color, minimo-bg-card-color, minimo-bg-stamp-color{
 }
 .icon-bar {
   color: #131925;
-  border-color: #131925;
-  background-color: #131925;
+  border-color: #d1d1d1;
+  background-color: #e0e0e0;
 }

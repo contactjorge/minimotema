@@ -34,28 +34,18 @@
  */
 #}
 {% set heading_id = attributes.id ~ '-menu'|clean_id %}
-<nav class="navbar navbar-main navbar-expand-lg navbar-fixed-top minimo-blueindigo" role="navigation"
+<nav class="navbar" role="navigation"
      aria-labelledby="{{ heading_id }}"{{ attributes|without('role', 'aria-labelledby') }}>
-	<div class="container-fluid">
-		{# Label. If not displayed, we still provide it for screen readers. #}
-		{% if not configuration.label_display %}
-			{% set title_attributes = title_attributes.addClass('visually-hidden') %}
-		{% endif %}
-		{{ title_prefix }}
-		<!-- <h2 class="navbar-header" { { title_attributes.setAttribute('id', heading_id) } }>{ { configuration.label } }</h2 -->
-		<div class="navbar-header" {{ title_attributes.setAttribute('id', heading_id) }}>
-			<button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#main-nav"
-			        aria-expanded="false" aria-controls="navbar">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<a href="#" class="navbar-brand">ChicagoConnect</a>
-		{{ title_suffix }}
-		</div>
-		{# Menu. #}
-		<div id="main-nav" class="collapse navbar-collapse">
-			{% block content %}
-				{{ content }}
-			{% endblock %}
-		</div>
-	</div>
+	{# Label. If not displayed, we still provide it for screen readers. #}
+	{% if not configuration.label_display %}
+		{% set title_attributes = title_attributes.addClass('visually-hidden') %}
+	{% endif %}
+	{{ title_prefix }}
+	<h2{{ title_attributes.setAttribute('id', heading_id) }}>{{ configuration.label }}</h2>
+	{{ title_suffix }}
+
+	{# Menu. #}
+	{% block content %}
+		{{ content }}
+	{% endblock %}
 </nav>

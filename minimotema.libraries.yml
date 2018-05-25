@@ -1,9 +1,9 @@
 #
 # Minimo tema theme
-# Luna
+# Venus
 # Libraries for theme
 # Jorge L Lopez - IT 390
-# Version 1805.21
+# Version 1805.24
 # Copyright 2018
 #
 minimotema-theme:
@@ -17,8 +17,8 @@ bootstrap:
   css:
     theme:
       vendor/bootstrap/css/bootstrap.css: {}
-      vendor/bootstrap/css/bootstrap-theme.css: {}
   js:
+    vendor/bootstrap/css/popper.js: {}
     vendor/bootstrap/js/bootstrap.js: {}
   dependencies:
     - core/jquery
