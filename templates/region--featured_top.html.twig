@@ -9,7 +9,13 @@
 #
 #}
 <section class="container" role="region">
-	{% if content %}
-		{{ content }}
-	{% endif %}
+	<div class="row">
+		{# if content #}
+
+		<div class="cta-featured-top col-sm-4 col-md-4 col-lg-4">
+			{% block content %}{% endblock %}
+		</div>
+
+		{# endif #}
+	</div>
 </section>

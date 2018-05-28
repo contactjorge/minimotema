@@ -1,0 +1,32 @@
+{#
+#
+# Minimo tema theme
+# Venus
+# Libraries for theme
+# Jorge L Lopez - IT 390
+# Version 1805.25
+# Copyright 2018
+#
+	{% block content %}
+		{{ content }}
+	{% endblock %}
+#}
+
+{% import _self as carousel %}<!-- import carousel as carousel-->
+<!-- start div -->
+<div class="carousel slide">
+	<div{{ attributes.addClass('carousel slide') }}>
+		{% if label_hidden %}
+			{% if multiple %}
+				<!-- multiple yes -->
+			{% else %}
+				<!-- multiple no -->
+			{% endif %}
+		{% else %}
+			<!-- label visible -->
+			{% for item in items %}
+				<div{{ item.attributes.addClass('carousel-slide') }}>{{ item.content }}</div>
+			{% endfor %}
+		{% endif %}
+	</div>
+</div>

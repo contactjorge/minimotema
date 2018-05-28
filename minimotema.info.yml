@@ -21,11 +21,9 @@ libraries:
 regions:
   primary_menu: 'Primary menu'
   header: Header
-  jumbotron: 'Page Jumbotron (Level 2 pages only)'
-  slider: 'Page slider (Front page only)'
-  highlighted: Highlighted
+  jumbotron: 'Jumbotron (Level 2 pages only)'
+  carousel: 'Carousel (Front page only)'
   breadcrumb: Breadcrumb
-  secondary_menu: 'Secondary menu'
   featured_top: 'Featured top'
   content: Content
   featured_bottom_first: 'Featured bottom first'
@@ -36,6 +34,8 @@ regions:
   footer_second: 'Footer second (Front page only)'
   footer_third: 'Footer third (Front page only)'
 disabled:
+  highlighted: Highlighted
+  secondary_menu: 'Secondary menu'
   sidebar_first: 'Sidebar first'
   sidebar_second: 'Sidebar second'
   page_top: 'Page top'

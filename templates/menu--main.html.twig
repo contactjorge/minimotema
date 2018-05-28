@@ -20,31 +20,38 @@
  * @ingroup themeable
  */
 #}
+
 {% import _self as menus %}
 
 {#
   We call a macro which calls itself to render the full tree.
   @see http://twig.sensiolabs.org/doc/tags/macro.html
+  1. We use menu_name (see above) to create a CSS class name from it.
+  See https://www.drupal.org/node/2649076
 #}
 {{ menus.menu_links(items, attributes, 0) }}
 
 {% macro menu_links(items, attributes, menu_level) %}
-  {% import _self as menus %}
-  {% if items %}
-    {% if menu_level == 0 %}
-<ul{{ attributes.addClass('nav navbar-nav no-items') }}>
-	{% else %}
-	<ul>
+	{% if items %}
+		{% if menu_level == 0 %}
+			<ul{{ attributes.addClass('navbar-nav mr-auto') }}>
 		{% endif %}
 		{% for item in items %}
-			<li{{ item.addClass('nav-item') }}>
-				{{ link(item.title, item.url, { 'class':['nav-link']}, {'data-toggle':['dropdown']},
-					{'aria-haspopup':['trie']}, {'aria-expanded':['false']}) }}
-				{% if item.below %}
-					{{ menus.menu_links(item.below, attributes, menu_level + 1) }}
-				{% endif %}
+			{% if item.below %}
+			<li{{ item.attributes.addClass('nav-item dropdown') }}>
+				<a href="{{ item.url }}" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+				   aria-expanded="false">{{ item.title }}</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					{% for item in item.below %}
+						<a class="dropdown-item" href="{{ item.url }}">{{ item.title }}</a>
+					{% endfor %}
+				</div>
+			{% else %}
+				<li{{ item.attributes.addClass('nav-item') }}>
+				<a href="{{ item.url }}" class="nav-link">{{ item.title }}</a>
+			{% endif %}
 			</li>
 		{% endfor %}
-	</ul>
+		</ul>
 	{% endif %}
-	{% endmacro %}
+{% endmacro %}

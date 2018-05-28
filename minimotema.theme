@@ -18,23 +18,23 @@ function minimotema_preprocess_html(&$variables){
 
 function minimotema_preprocess_region(&$variables){
   // add to classes at region level
-  $variables['attributes']['class'][] = 'minimotema-region row';
+  //$variables['attributes']['class'][] = 'minimotema-region';
 }
 
 function minimotema_preprocess_page(&$variables){
   //add to classes at page level
-  $variables['attributes']['class'][] = 'minimotema-page row';
+  $variables['attributes']['class'][] = 'minimotema-page';
 }
 
 function minimotema_preprocess_block(&$variables){
   //Display variables
   //dpm($variables);
-  $variables['attributes']['class'][] = 'minimotema-block';
+  //$variables['attributes']['class'][] = 'minimotema-block';
 }
 
 function minimotema_preprocess_field(&$variables){
   //add to classes at field level
-  $variables['attributes']['class'][] = 'minimotema-field';
+  //$variables['attributes']['class'][] = 'minimotema-field';
 }
 
 function minimotema_preprocess_field__hero(&$variables){
@@ -45,5 +45,5 @@ function minimotema_preprocess_field__hero(&$variables){
 function minimotema_preprocess_region__featured_bottom_first(&$variables) {
   //Display variables
   //dpm($variables);
-  $variables['attributes']['class'][] = 'minimotema-cta';
+  //$variables['attributes']['class'][] = 'minimotema-cta';
 }

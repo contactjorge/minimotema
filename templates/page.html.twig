@@ -46,13 +46,17 @@
  */
 #}
 <header class="top-nav">
-	{{ page.primary_menu }}
+	<nav class="navbar sticky-top navbar-expand-lg navbar-fixed-top main-navbar" role="navigation"
+	     aria-labelledby="{{ heading_id }}"{{ attributes|without('role', 'aria-labelledby') }}>
+		<div class="container-fluid">
+			{{ page.header }}
+		</div>
+	</nav>
+
 </header>
 
-<header class="container-fluid">
-	{{ page.header }}
-	{{ page.jumbotron }}
-</header>
+{{ page.jumbotron }}
+{{ page.carousel }}
 
 <main class="container-fluid" role="main">
 	<a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
