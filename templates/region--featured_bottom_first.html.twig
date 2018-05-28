@@ -8,8 +8,6 @@
 # Copyright 2018
 #
 #}
-<div class="row">
-	{% block content %}
-		{{ content }}
-	{% endblock %}
-</div>
+{% if content %}
+	{{ content }}
+{% endif %}

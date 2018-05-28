@@ -1,5 +1,6 @@
 /**
 /* Minimo tema styles
+/* Venus
 /* Javascript for theme
 /* Jorge L Lopez - IT 390
 /* Copyright 2018
@@ -8,10 +9,10 @@
 /*** Base Styles ***/
 html{
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background: #F8F8F8;
+  background: #f8f8f8;
 }
 body{
-  padding-top: 51px;
+  /*padding-top: 51px;*/
 }
 h1{font-size: 26px;}
 h2{font-size: 24px;}
@@ -20,14 +21,13 @@ h4{font-size: 20px;}
 h5{font-size: 18px;}
 h6{font-size: 16px;}
 p{font-size: 15px;}
-
-footer{
-  background: #FFFFFF;
+footer {
+  background: #fff;
 }
 /** Layout Styles **/
 #front {
-	background: #F8F8F8;
-	color: #082d3a;
+  background: #f8f8f8;
+  color: #082d3a;
 }
 .wrapper {
   padding: 0 0;
@@ -36,10 +36,6 @@ footer{
 }
 section, article{
   padding: 1rem 0;
-}
-.top-nav{
-  background: #082d3a;
-  color: black;
 }
 
 /** Component Styles **/
@@ -65,14 +61,14 @@ col-footer{
   font-weight: bold;
   text-align: end;
   text-decoration-color: #aea085;
-  text-shadow: #aea085 ;
+  text-shadow: #aea085;
 }
 .panel-minimo-default {
   border-color: #a7b8b5;
 }
 .panel-minimo-default > .panel-heading {
   color: #1e698d;
-  background-color: #E0E0E0;
+  background-color: #e0e0e0;
   border-color: #a7b8b5;
 }
 .panel-minimo-default > .panel-heading + .panel-collapse > .panel-body {
@@ -85,31 +81,33 @@ col-footer{
 .panel-minimo-default > .panel-footer + .panel-collapse > .panel-body {
   border-bottom-color: #a7b8b5;
 }
-
 .panel-minimo-bland {
-  background-color: #FFFFFF;
-  border-color: #FFFFFF;
+  background-color: #fff;
+  border-color: #fff;
 }
 .panel-minimo-bland > .panel-heading {
   color: #1e698d;
-  background-color: #FFFFFF;
+  background-color: #fff;
   border-color: #a7b8b5;
 }
 .panel-minimo-bland > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: #FFFFFF;
+  border-top-color: #fff;
 }
 .panel-minimo-bland > .panel-heading .badge {
   color: #1e698d;
-  background-color: #FFFFFF;
+  background-color: #fff;
 }
 .panel-minimo-bland > .panel-footer + .panel-collapse > .panel-body {
-  border-bottom-color: #FFFFFF;
+  border-bottom-color: #fff;
 }
 .navbar li a {
   color: #d1d1d1;
 }
-.navbar-brand{
+.navbar-brand {
   color: #a7b8b5;
+}
+.dropdown-menu{
+  background-color: #082d3a;
 }
 /** State Styles **/
 
@@ -136,8 +134,43 @@ minimo-bg-panel-color, minimo-bg-card-color, minimo-bg-stamp-color{
   color: #082d3a;
   border-bottom-style: inset;
 }
-.icon-bar {
-  color: #131925;
-  border-color: #d1d1d1;
-  background-color: #E0E0E0;
+.navbar-brand{
+  color: #e0e0e0 !important;
+}
+#block-minimotema-main-menu-menu a {
+  color: #e0e0e0 !important;
+  border-color: #a7b8b5 !important;
+}
+span.custom-toggler.navbar-toggler-icon {
+  background-image: url('https://mdbootstrap.com/img/svg/hamburger7.svg?color=082D3A');
+}
+
+@media only screen and (max-width: 576px) {
+  
+}
+
+@media only screen and (max-width: 768px) {
+  .cta-featured{
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .top-nav nav{
+    background: #f6f6f6;
+    color: #082d3a;
+  }
+  .navbar-brand, .navbar li a {
+    color: #082d3a !important;
+  }
+
+  #block-minimotema-main-menu-menu a {
+    color: #082d3a !important;
+    border-color: #a7b8b5 !important;
+  }
+
+}
+
+@media only screen and (max-width: 1200px) {
+
 }

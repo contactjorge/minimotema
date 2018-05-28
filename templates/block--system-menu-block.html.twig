@@ -32,28 +32,26 @@
  *
  * @ingroup themeable
  */
-<!-- <h2 class="navbar-header" { { title_attributes.setAttribute('id', heading_id) } }>{ { configuration.label } }</h2 -->
-<a class="navbar-brand" href="{{ path('<front>') }}" title="{{ site_name }}" rel="home" {{ title_attributes.setAttribute('id', heading_id) }}>
-	<img src="{{ site_logo }}" alt="{{ site_name }}" />
-</a>
-
 #}
+<nav class="navbar sticky-top navbar-expand-lg navbar-fixed-top main-navbar" role="navigation"
+     aria-labelledby="{{ heading_id }}"{{ attributes|without('role', 'aria-labelledby') }}>
+	<div class="container-fluid">
 {% set heading_id = attributes.id ~ '-menu'|clean_id %}
-{# Label. If not displayed, we still provide it for screen readers. #}
-{% if not configuration.label_display %}
+	{# Label. If not displayed, we still provide it for screen readers. #}
+	{% if not configuration.label_display %}
 		{% set title_attributes = title_attributes.addClass('visually-hidden') %}
-{% endif %}
-{{ title_prefix }}
-<button class="navbar-toggler" type="button"  data-toggle="collapse" data-target="#main-nav"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	{% endif %}
+	{{ title_prefix }}
+	<button class="navbar-toggler" type="button"  data-toggle="collapse" data-target="#main-nav"
+	        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	<span class="custom-toggler navbar-toggler-icon"></span>
-</button>
-{{ title_suffix }}
-
-{# Menu #}
-
+	</button>
+	{{ title_suffix }}
+	{# Menu. #}
 <div id="main-nav" class="collapse navbar-collapse">
 	{% block content %}
 		{{ content }}
 	{% endblock %}
 </div>
+	</div>
+</nav>

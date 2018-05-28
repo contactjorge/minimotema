@@ -55,18 +55,15 @@
 	</nav>
 </header>
 
-{{ page.carousel }}
-
 <main class="container-fluid" role="main">
 	<a id="front-main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-	<section class="row layout-content" role="region">
-	</section>
-
-	<section class="row layout-content" role="article">
-	</section>
-
-	{{ page.featured_top }}
+	<article class="row layout-content" role="article">
+		<h2>Welcome to Chicago Connect Solutions</h2>
+		<h3>Please login with your ID and password</h3>
+		<p><em>Authorized users only!</em></p>
+		{{ page.content }}
+	</article>
 
 	<section class="row" role="region">
 		<div class="cta-featured col col-md-4">
