@@ -4,12 +4,13 @@
 # Venus
 # Libraries for theme
 # Jorge L Lopez - IT 390
-# Version 1805.25
+# Version 1805.27
 # Copyright 2018
 #
 #}
-{% block content %}
+
 	<div class="row" id="featured-bottom-3">
-		{{ content }}
+		{% block content %}
+			{{ content }}
+		{% endblock %}
 	</div>
-{% endblock %}

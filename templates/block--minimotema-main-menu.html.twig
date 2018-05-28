@@ -32,11 +32,6 @@
  *
  * @ingroup themeable
  */
-<!-- <h2 class="navbar-header" { { title_attributes.setAttribute('id', heading_id) } }>{ { configuration.label } }</h2 -->
-<a class="navbar-brand" href="{{ path('<front>') }}" title="{{ site_name }}" rel="home" {{ title_attributes.setAttribute('id', heading_id) }}>
-	<img src="{{ site_logo }}" alt="{{ site_name }}" />
-</a>
-
 #}
 {% set heading_id = attributes.id ~ '-menu'|clean_id %}
 {# Label. If not displayed, we still provide it for screen readers. #}

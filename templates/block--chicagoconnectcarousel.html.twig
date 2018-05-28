@@ -7,25 +7,6 @@
 # Version 1805.25
 # Copyright 2018
 #
-	{% block content %}
-		{{ content }}
-	{% endblock %}
-				{% for item in items %}
-				<div{{ attributes.addClass('carousel slide') }}>{{ item.content }}</div>
-			{% endfor %}
-
-			<div{{ attributes.addClass('carousel slide') }}>
-			<div{{ title_attributes.addClass('carousel-slide') }}>{{ label }}</div>
-			{% if multiple %}
-			<div>
-				{% endif %}
-				{% for item in items %}
-					<div{{ item.attributes.addClass('carousel-inner') }}>{{ item.content }}</div>
-				{% endfor %}
-				{% if multiple %}
-			</div>
-			{% endif %}
-		</div>
 #}
 
 {% import _self as carousel %}<!-- import carousel as carousel-->
