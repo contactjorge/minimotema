@@ -55,6 +55,9 @@
 	</nav>
 </header>
 
+{{ page.primary_menu }}
+{{ page.breadcrumb }}
+
 <main class="container-fluid" role="main">
 	<a id="front-main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
@@ -65,34 +68,35 @@
 	</article>
 
 	<section class="row layout-content" role="article">
+		{{ page.featured_top }}
 	</section>
 
-	{{ page.featured_top }}
-
 	<section class="row" role="region">
-		<div class="cta-featured col col-md-4">
+		<div class="cta-featured col-md-4 col-lg-4">
 			{{ page.featured_bottom_first }}
 		</div>
-		<div class="cta-featured col col-md-4">
+		<div class="cta-featured col-md-4 col-lg-4">
 			{{ page.featured_bottom_second }}
 		</div>
-		<div class="cta-featured col col-md-4">
+		<div class="cta-featured col-md-4 col-lg-4">
 			{{ page.featured_bottom_third }}
 		</div>
 	</section>
 </main>{# main content layout-container role presentation #}
 
 <footer class="footer" role="contentinfo">
+	<div class="container" role="region">
+		{{ page.footer }}
+	</div>
 	<div class="container-fluid main-footer">
 		<div class="row">
-			<div class="col-footer col-sm-4 col-md-4 col-lg-4">
+			<div class="col-foote col-md-4 col-lg-4">
 				{{ page.footer_first }}
-				{{ page.help }}
 			</div>
-			<div class="col-footer col-sm-4 col-md-4 col-lg-4">
+			<div class="col-footer col-md-4 col-lg-4">
 				{{ page.footer_second }}
 			</div>
-			<div class="col-footer col-xs-4 col-sm-4 col-md-4 col-lg-4">
+			<div class="col-footer col-md-4 col-lg-4">
 				{{ page.footer_third }}
 			</div>
 		</div>

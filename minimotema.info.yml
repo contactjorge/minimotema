@@ -15,14 +15,14 @@ core: 8.x
 
 libraries:
   - minimotema/bootstrap
-  - minimotema/webfonts
   - minimotema/minimotema-theme
+  - minimotema/webfonts
 
 regions:
-  primary_menu: 'Primary menu'
   header: Header
   jumbotron: 'Jumbotron (Level 2 pages only)'
   carousel: 'Carousel (Front page only)'
+  primary_menu: 'Primary menu'
   breadcrumb: Breadcrumb
   featured_top: 'Featured top'
   content: Content

@@ -60,19 +60,32 @@
 <main class="container-fluid" role="main">
 	<a id="front-main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
+	<article class="row layout-content" role="article">
+		<div id="block-userlogin" role="form">
+			<form class="user-login-form" data-drupal-selector="user-login-form" action="/login?destination=/login" method="post" id="user-login-form" accept-charset="UTF-8">
+				<div class="js-form-item form-item js-form-type-textfield form-item-name js-form-item-name">
+				</div>
+				<div class="js-form-item form-item js-form-type-password form-item-pass js-form-item-pass">
+				</div>
+			<input autocomplete="off" data-drupal-selector="form-ddw62etq6eiegh-7unt6h4vzxadma4geruxkc6oqqdu" name="form_build_id" value="form-ddw62eTQ6eIEgh-7UNt6h4VzXADma4gEruXkc6oQqdU" type="hidden">
+				<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions">
+				</div>
+			</form>
+		</div>
+	</article>
+
 	<section class="row layout-content" role="article">
+		{{ page.featured_top }}
 	</section>
 
-	{{ page.featured_top }}
-
 	<section class="row" role="region">
-		<div class="cta-featured col col-md-4">
+		<div class="cta-featured col-md-4 col-lg-4">
 			{{ page.featured_bottom_first }}
 		</div>
-		<div class="cta-featured col col-md-4">
+		<div class="cta-featured col-md-4 col-lg-4">
 			{{ page.featured_bottom_second }}
 		</div>
-		<div class="cta-featured col col-md-4">
+		<div class="cta-featured col-md-4 col-lg-4">
 			{{ page.featured_bottom_third }}
 		</div>
 	</section>
@@ -81,17 +94,17 @@
 <footer class="footer" role="contentinfo">
 	<div class="container-fluid main-footer">
 		<div class="row">
-			<div class="col-footer col-sm-4 col-md-4 col-lg-4">
+			<div class="col-footer col-md-4 col-lg-4">
 				{{ page.footer_first }}
-				{{ page.help }}
 			</div>
-			<div class="col-footer col-sm-4 col-md-4 col-lg-4">
+			<div class="col-footer col-md-4 col-lg-4">
 				{{ page.footer_second }}
 			</div>
-			<div class="col-footer col-xs-4 col-sm-4 col-md-4 col-lg-4">
+			<div class="col-footer col-md-4 col-lg-4">
 				{{ page.footer_third }}
 			</div>
 		</div>
 	</div>
 </footer>
+
 

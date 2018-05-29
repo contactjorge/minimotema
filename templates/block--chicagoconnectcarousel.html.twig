@@ -11,23 +11,49 @@
 
 {% import _self as carousel %}<!-- import carousel as carousel-->
 <!-- start div -->
-<div class="carousel slide">
-	<div{{ attributes.addClass('carousel slide') }}>
-	{% if label_hidden %}
-		{% if multiple %}
-			<!-- multiple yes -->
-		{% else %}
-			<!-- multiple no -->
-		{% endif %}
-	{% else %}
-		<!-- label visible -->
-		{% for item in items %}
-			<div{{ item.attributes.addClass('carousel-slide') }}>{{ item.content }}</div>
-		{% endfor %}
-	{% endif %}
-	{% if label_inline %}
-		<!-- label inline -->
-		<div{{ item.attributes.addClass('carousel-slide') }}>{{ item.content }}</div>
-	{% endif %}
-	</div>
+<div class="carousel-item">
+	<img class="carousel-caption d-block w-100 active" src="http://chicagoconnect.solutions/sites/default/files/2018-05/Minimo-Carousel-HTML5-CSS-JavaScript.png" width="1200" height="600" alt="Custom Web Page" title="Vanilla HTML 5, CSS, JavaScript themes">
 </div>
+<div id="block-chicagoconnectcarousel" class="carousel slide" data-ride="carousel" data-interval="8000">
+	<ol class="carousel-indicators">
+		<li data-target="#block-chicagoconnectcarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#block-chicagoconnectcarousel" data-slide-to="1"></li>
+		<li data-target="#block-chicagoconnectcarousel" data-slide-to="2"></li>
+		<li data-target="#block-chicagoconnectcarousel" data-slide-to="3"></li>
+		<li data-target="#block-chicagoconnectcarousel" data-slide-to="4"></li>
+	</ol>
+	<div class="carousel-inner">
+		<div class="carousel-item"><img alt="Sreenshot of website" data-caption="Responsive design with HTML5, CSS, and Javascript" data-entity-type="file" data-entity-uuid="10dd81fd-4841-4bcc-ae0b-8d213bcef9f1" src="/sites/default/files/inline-images/Minimo-Carousel-HTML5-CSS-JavaScript.jpg" /></div>
+
+		<div class="carousel-item"><img alt="Screen shot of computer code" data-caption="Drupal 8 Theme Customization with Twig" data-entity-type="file" data-entity-uuid="9a05e209-8411-4514-a4e6-c9f09137c59a" src="/sites/default/files/inline-images/Minimo-Carousel-Twig-Drupal.jpg" /></div>
+
+		<div class="carousel-item"><img alt="Make connections with developers" data-caption="Chicago Developers Standing Tall" data-entity-type="file" data-entity-uuid="b842606a-c9ab-49b3-acaf-d3a60414b43e" src="/sites/default/files/inline-images/Minimo-Carousel-Chicago-Make-Connections2.jpg" /></div>
+
+		<div class="carousel-item"><img alt="Screenshot of Drupal Admin" data-caption="Drupal Site Generation and Customization on Github" data-entity-type="file" data-entity-uuid="ba587653-0dbc-40c1-8fef-ed6f6fdd459f" src="/sites/default/files/inline-images/Minimo-Carousel-Drupal-Themes.jpg" /></div>
+
+		<div class="carousel-item"><img alt="Screenshot of wordpress website" data-caption="Custom Wordpress Themes And Site Building" data-entity-type="file" data-entity-uuid="893be933-52f8-4724-b3f2-9a81a4811d72" src="/sites/default/files/inline-images/Minimo-Carousel-WordPress-Themes.jpg" /></div>
+
+		<div class="carousel-item"><img alt="Image of street with rail above" data-caption="Connect With Developers In Chicago" data-entity-type="file" data-entity-uuid="8cdbf7b8-7848-47f3-9486-3856a71b137c" src="/sites/default/files/inline-images/Minimo-Carousel-Chicago-Make-Connections.jpg" /></div>
+
+		<div class="carousel-item"><img alt="Screenshot of github code" data-caption="View Our Code Samples on Github" data-entity-type="file" data-entity-uuid="59df7ad8-fee6-4e46-b84d-4a772dabee72" src="/sites/default/files/inline-images/Minimo-Carousel-Check-Our-Github.jpg" /></div>
+
+	</div>
+	<a class="carousel-control-prev" href="#block-chicagoconnectcarousel" role="button" data-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a class="carousel-control-next" href="#block-chicagoconnectcarousel" role="button" data-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	</a>
+</div>
+<div >
+
+
+
+</div>
+
+<script>
+  //var frontCarousel = document.querySelector('.carousel');
+  //frontCarousel.carousel();
+</script>

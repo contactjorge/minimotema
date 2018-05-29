@@ -64,16 +64,18 @@
 		{{ page.content }}
 	</article>
 
-	{{ page.featured_top }}
+	<section class="row layout-content" role="region">
+		{{ page.featured_top }}
+	</section>
 
 	<section class="row" role="region">
-		<div class="col col-md-4">
+		<div class="cta-featured col-md-4 col-lg-4">
 			{{ page.featured_bottom_first }}
 		</div>
-		<div class="col col-md-4">
+		<div class="cta-featured col-md-4 col-lg-4">
 			{{ page.featured_bottom_second }}
 		</div>
-		<div class="col col-md-4">
+		<div class="cta-featured col-md-4 col-lg-4">
 			{{ page.featured_bottom_third }}
 		</div>
 	</section>
@@ -83,14 +85,13 @@
 <footer class="footer" role="contentinfo">
 	<div class="container-fluid main-footer">
 		<div class="row">
-			<div class="col-footer col-sm-4 col-md-4 col-lg-4">
+			<div class="col-footer col-md-4 col-lg-4">
 				{{ page.footer_first }}
-				{{ page.help }}
 			</div>
-			<div class="col-footer col-sm-4 col-md-4 col-lg-4">
+			<div class="col-footer col-md-4 col-lg-4">
 				{{ page.footer_second }}
 			</div>
-			<div class="col-footer col-xs-4 col-sm-4 col-md-4 col-lg-4">
+			<div class="col-footer col-md-4 col-lg-4">
 				{{ page.footer_third }}
 			</div>
 		</div>

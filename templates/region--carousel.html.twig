@@ -9,7 +9,18 @@
 #
 #}
 <header class="container-fluid" id="minimotema-carousel">
-	{% if content %}
-		{{ content }}
-	{% endif %}
+	<div class="row">
+		<div class="col-lg-2">
+			<p>&nbsp;</p>
+		</div>
+		<div class="col-lg-8">
+			{% if content %}
+				{{ content }}
+			{% endif %}
+		</div>
+		<div class="col-lg-2">
+			<p>&nbsp;</p>
+		</div>
+	</div>
+
 </header>

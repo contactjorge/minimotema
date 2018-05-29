@@ -55,6 +55,9 @@
 	</nav>
 </header>
 
+{{ page.primary_menu }}
+{{ page.breadcrumb }}
+
 <main class="container-fluid" role="main">
 	<a id="front-main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
@@ -79,6 +82,9 @@
 </main>{# main content layout-container role presentation #}
 
 <footer class="footer" role="contentinfo">
+	<div class="container" role="region">
+		{{ page.footer }}
+	</div>
 	<div class="container-fluid main-footer">
 		<div class="row">
 			<div class="col-footer col-sm-4 col-md-4 col-lg-4">
