@@ -1,0 +1,88 @@
+{#
+#
+# Minimo tema theme
+# Venus
+# Libraries for theme
+# Jorge L Lopez - IT 390
+# Version 1805.25
+# Copyright 2018
+#
+<div class="row">
+<div class="col-sm-4">
+<div class="service">
+<div class="service-icon"><span class="fas fa-graduation-cap"></span></div>
+
+<h4>Learning</h4>
+
+<p>Donec consectetur metus eget felis commodo, ut iaculis mi dignissim. Maecenas in suscipit libero, in dictum metus</p>
+</div>
+</div>
+
+<div class="col-sm-4">
+<div class="service">
+<div class="service-icon"><span class="fas fa-tree"></span></div>
+
+<h4>Growing</h4>
+
+<p>Donec consectetur metus eget felis commodo, ut iaculis mi dignissim. Maecenas in suscipit libero, in dictum metus</p>
+</div>
+</div>
+
+<div class="col-sm-4">
+<div class="service">
+<div class="service-icon"><span class="fas fa-hand-holding-heart"></span></div>
+
+<h4>Passion</h4>
+
+<p>Donec consectetur metus eget felis commodo, ut iaculis mi dignissim. Maecenas in suscipit libero, in dictum metus</p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-4">
+<div class="service">
+<div class="service-icon"><span class="fas fa-plug"></span></div>
+
+<h4>Connecting</h4>
+
+<p>Donec consectetur metus eget felis commodo, ut iaculis mi dignissim. Maecenas in suscipit libero, in dictum metus</p>
+</div>
+</div>
+
+<div class="col-sm-4">
+<div class="service">
+<div class="service-icon"><span class="fab fa-js-square"></span></div>
+
+<h4>HTML5/CSS/JS</h4>
+
+<p>Donec consectetur metus eget felis commodo, ut iaculis mi dignissim. Maecenas in suscipit libero, in dictum metus</p>
+</div>
+</div>
+
+<div class="col-sm-4">
+<div class="service">
+<div class="service-icon"><span class="fab fa-pagelines"></span></div>
+
+<h4>Twig Templates</h4>
+
+<p>Donec consectetur metus eget felis commodo, ut iaculis mi dignissim. Maecenas in suscipit libero, in dictum metus</p>
+</div>
+</div>
+
+</div>
+#}
+
+<!-- Begin Bottom CTA 2 -->
+<section class="container-fluid" role="region" id="page-featured-bottom-second">
+	<div{{ attributes.addClass('card-group') }} id="featured-bottom-2">
+		{{ title_prefix }}
+		{% if label %}
+			<h2{{ title_attributes }}>{{ label }}</h2>
+		{% endif %}
+		{{ title_suffix }}
+		{% block content %}
+			{{ content }}
+		{% endblock %}
+	</div>
+</section>

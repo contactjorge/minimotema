@@ -31,6 +31,28 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
+.cta-blocklist-text {
+  font-size: 0.9rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+}
+.cta-blockbody-text{
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.cta-blocklist-text li {
+  line-height: 1.25%;
+  border: none;
+  background: transparent;
+}
 /** Layout Styles **/
 #front {
   background: #f8f8f8;
@@ -67,6 +89,12 @@ footer .col-footer{
   max-height: 480px;
   margin: 0;
 }
+
+
+#minimotema-carousel{
+  margin: 1rem 0;
+  padding: 1rem 0;
+}
 .jumbotron {
   background-image: url('/sites/default/files/2018-05/IMG_0901_xsm.png');
   background-size: cover;
@@ -81,6 +109,42 @@ footer .col-footer{
   text-decoration-color: #aea085;
   text-shadow: #aea085;
 }
+
+/* Featured Services */
+#block-ourservices {
+  text-align: center;
+}
+#block-ourservices h2 {
+  text-transform: uppercase;
+}
+#block-ourservices p.block-subtitle {
+  padding: 15px 0;
+  font-size: 1.25em;
+}
+
+/* Feature bottom 2 grid */
+#page-featured-bottom-first {
+  margin-top: 4em;
+}
+#page-featured-bottom-first .service {
+  padding-left: 60px;
+  position: relative;
+  margin-bottom: 20px;
+}
+#page-featured-bottom-first .service-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 36px;
+  text-align: center;
+  display: block;
+  border-radius: 100em;
+}
+
+/** Card Block Header Placeholders **/
 .card-cascade1 .card-narrow-heading .card-title {
   margin: 1.25rem 4% 1.25rem 4%;
   background: linear-gradient(40deg, #cfc5bc, #036);
@@ -93,24 +157,40 @@ footer .col-footer{
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
   border-radius: .1rem;
 }
+
+
+/** Card Block **/
+#CTA_About, #CTA_AboutCC, #CTA_Experience {
+  min-height: 400px;
+}
+
+
 .card-narrow-heading.card {
-  margin: 1.25rem 0;
+  margin: 1.25rem 1.25rem;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
   border-radius: .1rem;
 }
-#block-minimotema-ctabottompanel1 .card-narrow-heading .card-title {
+
+#page-featured-bottom-second .card-narrow-heading .card-title {
+  margin: 1.25rem 4% 1.25rem 4%;
+  background: linear-gradient(40deg, #cfc5bc, #036);
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+  border-radius: .1rem;
+}
+
+#CTA_About.card-narrow-heading.card .card-heading {
   margin: 1.25rem 4% 1.25rem 4%;
   background: #007f9f;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
   border-radius: .1rem;
 }
-#block-minimotema-ctabottompanel2 .card-narrow-heading .card-title {
+#CTA_Experience.card-narrow-heading.card .card-heading {
   margin: 1.25rem 4% 1.25rem 4%;
   background: linear-gradient(40deg, #007f9f, #036);
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
   border-radius: .1rem;
 }
-#block-minimotema-ctabottompanel3 .card-narrow-heading .card-title {
+#CTA_AboutCC.card-narrow-heading.card .card-heading {
   margin: 1.25rem 4% 1.25rem 4%;
   background: #036;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
@@ -120,40 +200,29 @@ h3.card-title {
   padding-top: 1rem;
   padding-bottom: 1rem;
   text-align: center;
+  /*background: linear-gradient(40deg, #a7b8b5, #036);*/
   color: #f8f8f8;
 }
-.panel-minimo-bland {
+.card-minimo-bland {
   background-color: #727472;
   border-color: #727472;
   text-decoration: #fff;
   text-shadow: #f8f8f8;
   color: #e0e1e2;
 }
-.panel-minimo-bland > .panel-heading {
+.card-minimo-bland > .card-heading {
   text-decoration: #fff;
   text-shadow: #f8f8f8;
   color: #e0e1e2;
   background-color: #727472;
-  border-color: #727472;
-}
-.panel-minimo-bland > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: #727472;
-}
-.main-footer, .panel-minimo-bland > .panel-heading .badge {
-  text-decoration: #fff;
-  text-shadow: #f8f8f8;
-  color: #e0e1e2;
-  background-color: #727472;
-}
-.panel-minimo-bland > .panel-footer + .panel-collapse > .panel-body {
-  border-bottom-color: #727472;
-  background-color: #727472;
-}
-.panel-minimo-bland ul li{
-  background-color: transparent;
-  border: none;
+  border-color: #727472;background: linear-gradient(40deg, #a7b8b5, #036);
 }
 
+.card-minimo-bland > .card-heading + .card-collapse > .card-body {
+  border-top-color: #727472;
+}
+
+/** Carousel Component **/
 #block-chicagoconnectcarousel {
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
 }
@@ -164,6 +233,27 @@ h3.card-title {
   margin:auto;
 
 }
+
+/** Footer Panels **/
+
+
+.footer-panel, .panel-minimo-bland > .panel-heading .badge {
+  text-decoration: #fff;
+  text-shadow: #f8f8f8;
+  color: #e0e1e2;
+  background-color: #727472;
+}
+.panel-minimo-bland > .footer-panel + .panel-collapse > .panel-body {
+  border-bottom-color: #727472;
+  background-color: #727472;
+}
+.footer-panel.panel-minimo-bland ul.list-group li.list-group-item{
+  background-color: transparent;
+  border: none;
+}
+
+
+
 
 /** State Styles **/
 
@@ -185,7 +275,7 @@ minimo-blueindigo {color: #036;}
 minimo-indigo {color: #134a74;}
 minimo-violet {color: #131925;}
 minimo-black {color: #010101;}
-minimo-bg-panel-color, minimo-bg-card-color, minimo-bg-stamp-color{
+minimo-bg-card-color, minimo-bg-card-color, minimo-bg-stamp-color{
   color: #036;
   background: #f8f8f8;
   border-bottom-style: inset;
@@ -217,6 +307,10 @@ span.custom-toggler.navbar-toggler-icon {
   }
 }
 
+@media only screen and (max-width: 856px) {
+
+}
+
 @media only screen and (max-width: 992px) {
   .top-nav nav{
     background: #f8f8f8;
@@ -239,6 +333,9 @@ span.custom-toggler.navbar-toggler-icon {
     left: 0;
     bottom: 0;
     width: 100%;
+  }
+  .card {
+    display: block !important;
   }
 }
 

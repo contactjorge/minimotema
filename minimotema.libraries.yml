@@ -15,6 +15,12 @@ minimotema-theme:
   dependencies:
     - core/jquery
 
+zondicons:
+  css:
+    theme:
+      https://fonts.googleapis.com/css?family=Open+Sans:300,400, 600,700,800|Roboto+Slab: { type: external }
+
+
 popper:
   js:
     https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous": { type: external }
